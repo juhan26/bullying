@@ -80,7 +80,7 @@ export default function Navbar() {
               >
                 Home
               </Link>
-              <Link
+              {/* <Link
                 href="/about"
                 onClick={() => setOpen(false)}
                 className="block font-semibold"
@@ -93,7 +93,7 @@ export default function Navbar() {
                 className="block font-semibold"
               >
                 Documentation
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         )}
