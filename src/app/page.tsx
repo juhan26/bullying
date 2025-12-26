@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "./components/Container";
+import Link from 'next/link';
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import { motion } from "framer-motion";
@@ -160,6 +161,43 @@ export default function Home() {
           </Container>
         </Section>
       </div>
+
+      {/* CYBERVAULT CTA */}
+      <Section title="Technological Protection" subtitle="Fitur eksklusif untuk perlindungan digital">
+        <Container>
+          <Link href="/cybervault">
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              className="relative rounded-3xl overflow-hidden bg-slate-900 shadow-2xl group cursor-pointer"
+            >
+              <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-indigo-500/30 transition-all"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl -ml-10 -mb-10 group-hover:bg-teal-500/20 transition-all"></div>
+
+              <div className="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                  <div className="inline-block px-3 py-1 mb-4 text-xs font-mono font-bold text-teal-400 bg-teal-400/10 rounded-full border border-teal-400/20">
+                    NEW IT FEATURE
+                  </div>
+                  <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                    Masuk ke <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-teal-400">CyberVault</span>
+                  </h2>
+                  <p className="text-slate-400 text-lg max-w-xl">
+                    Gunakan teknologi kriptografi untuk mengamankan bukti bullying dan kirim laporan terenkripsi. Ruang aman digital Anda.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <div className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white font-bold flex items-center gap-3 group-hover:bg-white/20 transition-all">
+                    Akses Fitur
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </Link>
+        </Container>
+      </Section>
 
       {/* QUOTE SECTION */}
       <div className="py-20 text-center px-4">

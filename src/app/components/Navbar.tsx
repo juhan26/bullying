@@ -32,14 +32,17 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex gap-6 items-center">
-          <Link href="/" className="font-semibold">
+          <Link href="/" className="font-semibold text-slate-600 hover:text-indigo-600 transition-colors">
             Home
           </Link>
-          <Link href="/about" className="font-semibold">
+          <Link href="/about" className="font-semibold text-slate-600 hover:text-indigo-600 transition-colors">
             About
           </Link>
-          <Link href="/documentation" className="font-semibold">
+          <Link href="/documentation" className="font-semibold text-slate-600 hover:text-indigo-600 transition-colors">
             Documentation
+          </Link>
+          <Link href="/cybervault" className="px-4 py-2 rounded-lg bg-slate-900 text-white font-bold text-sm shadow-md hover:shadow-lg hover:shadow-slate-900/20 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+            <span>🛡️</span> CyberVault
           </Link>
         </nav>
 
